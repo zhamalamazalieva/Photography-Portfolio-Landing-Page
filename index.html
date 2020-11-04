@@ -13,54 +13,68 @@
 </head>
 
 <body>
-
   <div class="wrapper">
+    <!-- Фон -->
     <div class="left"></div>
-    <div class="right"></div>
+    <div class="rigth"></div>
 
-    <nav class="nav">
-      <ul>
-        <li class="logo">unsplash</li>
-        <li class="menu"><i class="fa fa-bars"></i></li>
-        <li class="collection">collection</li>
-        <li class="explore">explore</li>
-        <li class="search">search</li>
-        <li class="profile">
-          <div class="img"></div>
-        </li>
+    <!-- Нав меню -->
+    <nav class="nav-top">
+      <ul class="nav__menu">
+        <li class="nav__item"><a class="nav__link">UNSPLASH</a> </li>
+        <li class="nav__item"><a class="nav__link"><i class="fa fa-bars"></i></a> </li>
+        <li class="nav__item"><a class="nav__link">collection</a> </li>
+        <li class="nav__item"><a class="nav__link">explore</a> </li>
+        <li class="nav__item"><a class="nav__link">search</a> </li>
+        <li class="nav__item"><a>
+            <div class="nav__avatar"><img src="./img/profile.jpg" alt="avatar"></div>
+          </a></li>
       </ul>
     </nav>
-
+    <!-- content -->
     <div class="content">
-      <div class="img-wrapper">
-        <div class="karina"></div>
+    <!-- content-photo -->
+      <div class="content__photo">
+        <img src="./img/karina.jpg" alt="content photo">
       </div>
 
-      <div class="info">
-        <ul>
-          <li>unsplash.com</li>
-          <li>@karinates</li>
-          <li>karinates.com</li>
-          <li><i class="fa fa-share-alt"></i></li>
+      <!-- content-name -->
+
+      <div class="content__name">
+        <h1 class="name">karina tes</h1>
+        <p class="profession">Fashion Photographer</p>
+      </div>
+
+      <div class="content__name--transparent">
+        karina tes
+      </div>
+      <!-- content menu-info -->
+      <nav class="content__info">
+        <ul class="nav__menu">
+          <li class="nav__item"><a href="#" class="nav__link">UNSPLASH.COM</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">@KARINATES</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">KARINATES.COM</a></li>
+          <li class="nav__item"><a href="#" class="nav__link"><i class="fa fa-share-alt"></i></a></li>
         </ul>
-      </div>
+      </nav>
 
-      <div class="text">
-        <h1>karina tes</h1>
-        <p>Fashion Photographer</p>
-      </div>
-
-      <div class="name">karina tes</div>
-
-      <div class="bottomnav">
-        <ul>
-          <li>profile</li>
-          <li>portfolio</li>
-          <li>contact</li>
+      <!--content-menu -->
+      <nav class="content__bottom-menu">
+        <ul class="nav__menu">
+          <li class="nav__item"><a href="#" class="nav__link">PROFIL</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">PORTFOLIO</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">CONTENT</a></li>
         </ul>
-      </div>
+      </nav>
+
+
     </div>
+
+
+
   </div>
+
+
 
   <script>
 
