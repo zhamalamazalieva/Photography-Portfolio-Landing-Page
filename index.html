@@ -16,18 +16,18 @@
   <div class="wrapper">
     <!-- Фон -->
     <div class="left"></div>
-    <div class="rigth"></div>
+    <div class="right"></div>
 
     <!-- Нав меню -->
     <nav class="nav-top">
       <ul class="nav__menu">
-        <li class="nav__item"><a class="nav__link">UNSPLASH</a> </li>
-        <li class="nav__item"><a class="nav__link"><i class="fa fa-bars"></i></a> </li>
-        <li class="nav__item"><a class="nav__link">collection</a> </li>
-        <li class="nav__item"><a class="nav__link">explore</a> </li>
-        <li class="nav__item"><a class="nav__link">search</a> </li>
-        <li class="nav__item"><a>
-            <div class="nav__avatar"><img src="./img/profile.jpg" alt="avatar"></div>
+        <li class="logo"><a class="nav__link">UNSPLASH</a> </li>
+        <li class="burger-menu"><a class="nav__link"><i class="fa fa-bars"></i></a> </li>
+        <li class="collection"><a class="nav__link">collection</a> </li>
+        <li class="explore"><a class="nav__link">explore</a> </li>
+        <li class="search"><a class="nav__link">search</a> </li>
+        <li class="avatar"><a>
+            <div class="nav__avatar"></div>
           </a></li>
       </ul>
     </nav>
@@ -35,7 +35,7 @@
     <div class="content">
     <!-- content-photo -->
       <div class="content__photo">
-        <img src="./img/karina.jpg" alt="content photo">
+        <div class="karina"></div>
       </div>
 
       <!-- content-name -->
@@ -90,19 +90,19 @@
       ease: Power3.easeInOut
     })
 
-    TweenMax.from('.nav', 2, {
+    TweenMax.from('.nav-top', 2, {
       delay: .8,
       opacity: 0,
       ease: Expo.easeInOut
     })
 
-    TweenMax.from('.text h1', 2, {
+    TweenMax.from('.content__name .name', 2, {
       delay: .6,
       x: 1000,
       ease: Circ.easeInOut
     })
 
-    TweenMax.from('.text p', 2, {
+    TweenMax.from('.content__name .profession', 2, {
       delay: .7,
       x: 1000,
       ease: Circ.easeInOut
@@ -114,23 +114,23 @@
       ease: Power2.easeInOut
     })
 
-    TweenMax.staggerFrom('.bottomnav ul li', 2, {
+    TweenMax.staggerFrom('.content__bottom-menu ul li', 2, {
       delay: 1,
       x: 1000,
       ease: Circ.easeInOut
     }, 0.08)
 
-    TweenMax.from('.info', 2, {
+    TweenMax.from('.content__info', 2, {
       delay: 1.5,
       y: 100,
       ease: Circ.easeInOut
     })
 
-    TweenMax.from('.name', 2, {
+    TweenMax.from('.content__name--transparent', 2, {
       delay: 1.5,
       x: -600,
       ease: Circ.easeInOut
-    })
+     })
 
   </script>
 </body>
